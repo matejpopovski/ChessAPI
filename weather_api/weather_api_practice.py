@@ -22,6 +22,6 @@ for i, time in enumerate(weather_data['hourly']['time']):
     allHumidity.append(humidity)
     wind_speed = weather_data['hourly']['wind_speed_10m'][i]
     allWindSpeed.append(wind_speed)
-    #print(f"Time: {time}, Temperature: {temperature}°C, Humidity: {humidity}%, Wind Speed: {wind_speed} km/h")
+    print(f"Time: {time}, Temperature: {temperature}°C, Humidity: {humidity}%, Wind Speed: {wind_speed} km/h")
 
 print(f"Mean temp: ", mean(allTemp), "Mean humidity: ", mean(allHumidity), "Mean wind speed: ",  mean(allWindSpeed))
