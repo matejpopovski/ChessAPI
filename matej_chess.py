@@ -25,3 +25,5 @@ for i, time in enumerate(weather_data['hourly']['time']):
     #print(f"Time: {time}, Temperature: {temperature}°C, Humidity: {humidity}%, Wind Speed: {wind_speed} km/h")
 
 print(f"Mean temp: ", mean(allTemp), "Mean humidity: ", mean(allHumidity), "Mean wind speed: ",  mean(allWindSpeed))
+
+##change
