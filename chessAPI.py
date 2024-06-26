@@ -6,4 +6,4 @@ Client.request_config["headers"]["User-Agent"] = (
 response = get_player_profile("fabianocaruana")
 player_name = response.json['player']['name']
 #or
-player_name = response.player.name
+player_name = response.player.name 

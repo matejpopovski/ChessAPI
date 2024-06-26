@@ -10,7 +10,7 @@ print(f"Timezone: {weather_data['timezone']}")
 print(f"Current Temperature: {weather_data['current']['temperature_2m']} {weather_data['current_units']['temperature_2m']}")
 print(f"Current Wind Speed: {weather_data['current']['wind_speed_10m']} {weather_data['current_units']['wind_speed_10m']}")
 
-# Loop through the hourly data and print it
+# Loop through the hourly data and print it 
 print("\nHourly Weather Data:")
 allTemp = []
 allHumidity = []
