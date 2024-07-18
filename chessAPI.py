@@ -37,21 +37,10 @@
 
 import requests
 
-url = 'https://www.chess.com/path/to/resource'
-
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+ 'User-Agent': 'contact matej.popovski@gmail.com if there is a problem!'
 }
 
-# Starting a session to handle cookies
-session = requests.Session()
+x = requests.get("https://api.chess.com/pub/player/MatejPopovski/stats", headers=headers)
 
-response = session.get(url, headers=headers)
-
-if response.status_code == 403:
-    print("Request failed with status code:", response.status_code)
-    print("Response content:", response.text)
-else:
-    print("Request succeeded!")
-    print("Response content:", response.text)
-
+print(x.json())
