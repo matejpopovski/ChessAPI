@@ -33,7 +33,7 @@
 # else:
 #     # Handle non-200 status codes
 #     print(f"Request failed with status code: {response.status_code}")
-#     print("Response content:", response.text) 
+#     print("Response content:", response.text)   
 
 import requests
 
